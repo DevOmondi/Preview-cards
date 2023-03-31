@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Poppins&family=Roboto&display=swap');
+
+body{
+  font-size:15px;
+}
+
+.previewCards{
+  display:flex;
+  flex-direction:column;
+  width:fit-content;
+  border-radius:2em;
+  margin:0 auto;
+}
+
+.sedan{
+  background-color:hsl(31, 77%, 52%);
+  display:flex;
+  flex-direction:column;
+  width:5cm;
+  padding:3em;
+  border-top-left-radius:0.6em;
+  border-top-right-radius:0.6em;
+}
+
+.suvs{
+  background-color:hsl(184, 100%, 22%);
+  display:flex;
+  flex-direction:column;
+  width:5cm;
+  padding:3em;
+}
+
+.luxury{
+  background-color:hsl(179, 100%, 13%);
+  display:flex;
+  flex-direction:column;
+  width:5cm;
+  padding:3em;
+  border-bottom-left-radius:0.6em;
+  border-bottom-right-radius:0.6em;
+}
+
+.sedan > h1{
+  font-family:"Big Shoulders Display",Cursive;
+  color:hsl(0, 0%, 95%)
+}
+
+.suvs > h1{
+  font-family:"Big Shoulders Display",Cursive;
+  color:hsl(0, 0%, 95%)
+}
+
+.luxury > h1{
+  font-family:"Big Shoulders Display",Cursive;
+  color:hsl(0, 0%, 95%)
+}
+
+.sedan > p {
+  font-family:"Lexend Deca", sans-serif;
+  margin-bottom:2.5em;
+  color:hsla(0, 0%, 100%, 0.75);
+  width:max-width;
+}
+
+.suvs > p {
+  font-family:"Lexend Deca", sans-serif;
+  margin-bottom:2.5em;
+  color:hsla(0, 0%, 100%, 0.75);
+}
+
+.luxury > p {
+  font-family:"Lexend Deca", sans-serif;
+  margin-bottom:2.5em;
+  color:hsla(0, 0%, 100%, 0.75);
+}
+
+.sedan > button {
+  font-family:"Lexend Deca", sans-serif;
+  color:hsl(31, 77%, 52%);
+  width:3.5cm;
+  cursor:pointer;
+  padding: 0.8em 2em;
+  border-radius:4em;
+  border:none;
+}
+
+.sedan > button:hover{
+  background-color:hsl(31, 77%, 52%);
+  border: white solid 2px;
+  color:hsl(0, 0%, 95%)
+}
+
+.suvs > button{
+  font-family:"Lexend Deca", sans-serif;
+  color:hsl(184, 100%, 22%);
+  width:3.5cm;
+  cursor:pointer;
+  padding: 0.8em 2em;
+  border-radius:4em;
+  border:none;
+}
+
+.suvs > button:hover{
+  background-color:hsl(184, 100%, 22%);
+  border: white solid 2px;
+  color:hsl(0, 0%, 95%)
+}
+
+.luxury > button{
+  font-family:"Lexend Deca", sans-serif;
+  color:hsl(179, 100%, 13%);
+  width:3.5cm;
+  cursor:pointer;
+  padding: 0.8em 2em;
+  border-radius:4em;
+  border:none;
+}
+
+.luxury > button:hover{
+  background-color:hsl(179, 100%, 13%);
+  border: white solid 2px;
+  color:hsl(0, 0%, 95%)
+}
+/* Desktop screen size view */
+@media only screen and (min-width:768px){
+.previewCards{
+flex-direction:row;
+}
+
+.sedan{
+  border-bottom-left-radius:0.6em;
+  border-top-right-radius:0em;
+}
+
+.luxury{
+  border-top-right-radius:0.6em;
+  border-bottom-left-radius:0em;
+}
+}
